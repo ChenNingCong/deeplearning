@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "deep-learning-template" # can be different from the import module name
+version = "0.0.1"
+authors = [
+  { name="Ningcong Chen", email="nchen3@wpi.com" },
+]
+description = "A small template package for deep learning"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent"
+]
+
+# !important
+# we use a flat layout and we have multiple packages
+# so we need to only include this package by using include
+[tool.setuptools.packages.find]
+include = ["deeplearning"] 
+
+
+[project.urls]
+Homepage = "https://github.com/ChenNingCong/deeplearning"
+Issues = "https://github.com/ChenNingCong/deeplearning/issues"
