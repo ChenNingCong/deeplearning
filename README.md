@@ -12,7 +12,7 @@ See https://packaging.python.org/en/latest/tutorials/packaging-projects/ for mor
 
 Then follow the upload documentation to upload the package.
 
-2. If you don't want to publish your package (because you need a pypi account), but you want to install the package and use it globally. Then you can simply `pip install git+<your github repo link>`. You can also git clone the package and do a `pip install -e .`.
+2. If you don't want to publish your package (because you need a pypi account), but you want to install the package and use it globally. Then you can simply `pip install git+<your github repo link> --force-reinstall --upgrade` (we force reinstall the package so that we can receive updates in the master branch immediately). You can also git clone the package and do a `pip install -e .`.
 
 # Run test
 `python -m unittest test/test1.py`
